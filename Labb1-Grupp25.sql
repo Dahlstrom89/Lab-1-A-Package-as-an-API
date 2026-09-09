@@ -208,3 +208,15 @@ end customer_security;
 /
 
 drop function get_hash;
+
+
+//Uppgift 5//
+
+//1//
+- upper är fel
+- SHA1 dålig
+- salt inte slumpmässisgt 
+- peppar fin ej
+//2//
+salt lägger till en extra så att lösenords hashet blir svårae att attakera
+//3//

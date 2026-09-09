@@ -1,0 +1,1 @@
+exec CUSTOMER_SECURITY.ADD_CUSTOMER('Isak', 'hej123')
