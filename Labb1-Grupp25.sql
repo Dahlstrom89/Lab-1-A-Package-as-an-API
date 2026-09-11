@@ -220,3 +220,5 @@ drop function get_hash;
 //2//
 salt lägger till en extra så att lösenords hashet blir svårae att attakera
 //3//
+
+X-26^längd av lösenord
