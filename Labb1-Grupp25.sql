@@ -118,6 +118,11 @@ as
 	p_new_password in varchar2
   );
   
+  procedure delete_customer(
+    p_username in varchar2,
+    p_password in varchar2
+);
+  
 end customer_security;
 /
 
@@ -203,6 +208,24 @@ as
 
     end if;
   end;
+  
+
+
+  procedure delete_customer(
+    p_username in varchar2,
+    p_password in varchar2
+)
+as
+begin
+
+    if get_login(p_username, p_password) = 1 then
+
+        delete from customer
+        where username = p_username;
+
+    end if;
+
+end delete_customer;
 
 end customer_security;
 /
